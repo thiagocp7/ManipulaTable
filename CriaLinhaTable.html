@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cria Linha Tabela</title>
+        <script type="text/javascript" src="ManipulaTable.js"></script>
+    </head>
+    <body>
+        <div>
+            <label>Nome</label>
+            <div>
+                <input id="TxtNome" name="TxtNome" type="text" value="" />
+            </div>
+            <label>Telefone</label>
+            <div>
+                <input id="TxtTel" name="TxtTel" type="text" value="" />
+            </div>
+            <div>
+                <input type="button" value="Add Contato" id="btnContato" onclick="AdicionaLinha('GridViewContact')" />
+            </div>
+        </div>
+        <div>
+            <br>
+            <table id="GridViewContact" border="1" style="border-collapse:collapse; border-style:solid;">
+                <thead>
+                    <tr>
+                        <th style="border-style: solid;">Nome Pessoa</th>
+                        <th style="border-style: solid;">Telefone</th>
+                        <th style="border-style: solid;">#</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </body>
+</html>
