@@ -7,21 +7,29 @@
     </head>
     <body>
         <div>
-            <label>Nome</label>
-            <div>
-                <input id="TxtNome" name="TxtNome" type="text" value="" />
-            </div>
-            <label>Telefone</label>
-            <div>
-                <input id="TxtTel" name="TxtTel" type="text" value="" />
-            </div>
-            <div>
-                <input type="button" value="Add Contato" id="btnContato" onclick="AdicionaLinha('GridViewContact')" />
-            </div>
+            <table>
+                <tr>
+                    <td> 
+                        <label>Nome</label>
+                    </td>
+                    <td>
+                        <input id="TxtNome" name="TxtNome" type="text" value="" />
+                    </td>
+                    <td> 
+                        <label>Telefone</label>
+                    </td>
+                    <td>
+                        <input id="TxtTel" name="TxtTel" type="text" value="" />
+                    </td>
+                    <td>
+                        <input type="image" src="icone_addRL.gif" id="btnContato" onclick="AdicionaLinha('GridViewContact')" />
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div>
+        <div style="width: 300px;margin-left: 70px">
             <br>
-            <table id="GridViewContact" border="1" style="border-collapse:collapse; border-style:solid;">
+            <table id="GridViewContact" border="1" style="width: 100%; border-collapse:collapse; border-style:solid;">
                 <thead>
                     <tr>
                         <th style="border-style: solid;">Nome Pessoa</th>
